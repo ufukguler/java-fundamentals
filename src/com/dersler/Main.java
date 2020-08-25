@@ -1,6 +1,5 @@
 package com.dersler;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -8,19 +7,65 @@ public class Main {
     public static void main(String[] args) {
         //tipler();
         //operatorler();
-        scannerInput();
+        //scannerInput();
+        //karsilastirma();
+        //mantiksal();
+        switchcase(5);
+    }
+
+    static void switchcase(int i){
+        switch (i){
+            case 1:
+                System.out.println(i*6);
+                break;
+            case 2:
+                System.out.println(i*3);
+                break;
+            case 3:
+                System.out.println(i*2);
+                break;
+            default:
+                System.out.println(i);
+                break;
+        }
+    }
+
+    static void mantiksal(){
+        System.out.println(3==3 && 3==4);  //false
+        System.out.println(3==3 & 4==4 & 5==4);  //false
+        System.out.println(3==3 || 3==4);  //true
+        System.out.println(3==3 | 3==4); //
+        System.out.println(!false);
+    }
+
+    static void karsilastirma() {
+        System.out.println(3==3);   //true
+        System.out.println(3=='3'); //false
+
+        String s1 = "c";
+        String s2 = "c";
+        System.out.println(s1.equals('c')); //false
+        System.out.println(s1.equals("c")); //true
+        System.out.println(s1 == s2); //true
+        System.out.println(s1.equals(s2)); //true
     }
 
     static void scannerInput() {
+        // nextint-double falan aldıktan sonra string almak istersek bi satır dummy almak gerekiliyor. yoksa geciyor string alma kısmını
         Scanner sc = new Scanner(System.in);
         System.out.print("yas girin:");
         if (sc.hasNextInt()) {
             int yas = sc.nextInt();
             System.out.println(" yas:" + yas);
-
         } else {
             System.out.println("bu sayi mi guzel kardesim? ...");
         }
+        int yas = sc.nextInt();
+        int yas1 = sc.nextInt();
+        int yas2 = sc.nextInt();
+        // burada girdiyi soyle yapabilirsi :>  5 25 3
+        // bu boslukları tek tek anlıyor ve tek tek atıyor.
+
     }
 
     static void operatorler() {
