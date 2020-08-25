@@ -1,12 +1,26 @@
 package com.dersler;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         //tipler();
         //operatorler();
+        scannerInput();
+    }
+
+    static void scannerInput() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("yas girin:");
+        if (sc.hasNextInt()) {
+            int yas = sc.nextInt();
+            System.out.println(" yas:" + yas);
+
+        } else {
+            System.out.println("bu sayi mi guzel kardesim? ...");
+        }
     }
 
     static void operatorler() {
