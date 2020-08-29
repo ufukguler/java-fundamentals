@@ -1,28 +1,29 @@
-package com.dersler;
+package com.dersler.temel;
 
 import java.util.Scanner;
 
-public class Main {
-
-    public static void main(String[] args) {
-        //tipler();
-        //operatorler();
-        //scannerInput();
-        //karsilastirma();
-        //mantiksal();
-        switchcase(5);
+public class BaziTemeller {
+    static boolean asal(int sayi) {
+        for (int i = 2; i < sayi; i++) {
+            if (sayi % i == 0) {
+                System.out.println(sayi+" asal degildir!");
+                return false;
+            }
+        }
+        System.out.println(sayi+" asaldir");
+        return true;
     }
 
-    static void switchcase(int i){
-        switch (i){
+    static void switchcase(int i) {
+        switch (i) {
             case 1:
-                System.out.println(i*6);
+                System.out.println(i * 6);
                 break;
             case 2:
-                System.out.println(i*3);
+                System.out.println(i * 3);
                 break;
             case 3:
-                System.out.println(i*2);
+                System.out.println(i * 2);
                 break;
             default:
                 System.out.println(i);
@@ -30,17 +31,17 @@ public class Main {
         }
     }
 
-    static void mantiksal(){
-        System.out.println(3==3 && 3==4);  //false
-        System.out.println(3==3 & 4==4 & 5==4);  //false
-        System.out.println(3==3 || 3==4);  //true
-        System.out.println(3==3 | 3==4); //
+    static void mantiksal() {
+        System.out.println(3 == 3 && 3 == 4);  //false
+        System.out.println(3 == 3 & 4 == 4 & 5 == 4);  //false
+        System.out.println(3 == 3 || 3 == 4);  //true
+        System.out.println(3 == 3 | 3 == 4); //
         System.out.println(!false);
     }
 
     static void karsilastirma() {
-        System.out.println(3==3);   //true
-        System.out.println(3=='3'); //false
+        System.out.println(3 == 3);   //true
+        System.out.println(3 == '3'); //false
 
         String s1 = "c";
         String s2 = "c";
