@@ -1,9 +1,14 @@
 package com.dersler.interfacee;
+
 public interface IMuhendis {
-    String universite_adi(String uni);
-    void adli_sicil();
-    void askerlik();
-    void meslek(String meslek);
+
+    void askerlik_durumu_sorgula();
+
+    String mezuniyet_ortalamasi(double derece);
+
+    void adli_sicil_sorgula();
+
+    void is_tecrubesi(String[] array);
 
 
 }
