@@ -1,5 +1,8 @@
 package com.dersler;
 
+import com.dersler.innerClass.LocalInner;
+import com.dersler.innerClass.Matematik;
+import com.dersler.innerClass.Matematik.Factorial;
 import com.dersler.interfacee.IMuhendis;
 import com.dersler.interfacee.MakineMuhendisi;
 import com.dersler.interfacee.PcMuhendisi;
@@ -11,25 +14,49 @@ import com.dersler.soyutAbstract.Daire;
 import com.dersler.soyutAbstract.Kare;
 import com.dersler.soyutAbstract.Sekil;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
 
+          //Local inner class  burada ki local inner içeren metoda erişemeyiz.
+          LocalInner localInner = new LocalInner("deneme");
+          localInner.innerClassMethod();
 
-        /*Kare kare = new Kare("kare", 3);
+
+        /*  STATIK OLMAYAN INNER CLASS OBJESI
+        Matematik.Factorial factorial = new Matematik().new Factorial();
+        Matematik.Asal asal = new Matematik().new Asal();
+        Matematik.Alan alan = new Matematik().new Alan();
+        Matematik.Alan.DaireAlan daire_alan = new Matematik().new Alan().new DaireAlan();
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bir sayı giriniz:");
+
+        int sayi = scanner.nextInt();
+        if (asal.asal_mi(sayi)) {
+            System.out.println("Bu sayı Asaldır.");
+        }
+        else {
+            System.out.println("Bu sayı asal değildir..");
+        }
+        factorial.faktoriyel();
+        //alan.daire_alan(5);
+        daire_alan.daire_alan(6);
+        */
+
+        /*
+        Kare kare = new Kare("kare", 3);
         kare.alanHesapla();
         kare.cevreHesapla();
-
         Daire daire = new Daire("daire", 3);
         daire.alanHesapla();
-
         Sekil kareSekli = new Kare("kare2",4);
         kareSekli.alanHesapla();
         // kare icinde tanimladigim cevre hesaplamayi goremez....
         */
-
-
         /*
         // sadece yas kontrolu
         SignUpManager signUpManager = new SignUpManager(new AgeUserCheck());
@@ -48,13 +75,11 @@ public class Main {
         muhendis1.adli_sicil_sorgula();
         System.out.println(muhendis1.mezuniyet_ortalamasi(3.07));
         String[] tecrube = {"Vestel","Havelsan","Turksat"};
-
         muhendis1.is_tecrubesi(tecrube);
         */
         /*
         IMuhendis muhendis1 = new PcMuhendisi(false,false);
         MakineMuhendisi muhendis2 = new MakineMuhendisi(true,false);
-
         String[] tecrube = {};
         String[] referans = {"Mustafa Murat Coşkun","Serhat Say"};
         muhendis2.adli_sicil_sorgula();
@@ -63,7 +88,7 @@ public class Main {
         muhendis2.is_tecrubesi(tecrube);
         muhendis2.referans_getir(referans);
         muhendis2.calis();
-*/
+        */
         /*
         Araba arabam = new Araba();
         System.out.println(arabam.hashCode());
@@ -72,7 +97,6 @@ public class Main {
         System.out.println(arabam1.hashCode());
         System.out.println(arabam == arabam1);
         String a="sarı";
-
         Yonetici yonetici = new Yonetici("ufuk",10,"yazilim");
         System.out.println(yonetici.bilgileri());
         */
