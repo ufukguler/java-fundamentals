@@ -7,10 +7,28 @@ import com.dersler.interfacee.ornek.AgeUserCheck;
 import com.dersler.interfacee.ornek.ComplexUserCheck;
 import com.dersler.interfacee.ornek.SignUpManager;
 import com.dersler.interfacee.ornek.User;
+import com.dersler.soyutAbstract.Daire;
+import com.dersler.soyutAbstract.Kare;
+import com.dersler.soyutAbstract.Sekil;
 
 public class Main {
 
     public static void main(String[] args) {
+
+
+
+        /*Kare kare = new Kare("kare", 3);
+        kare.alanHesapla();
+        kare.cevreHesapla();
+
+        Daire daire = new Daire("daire", 3);
+        daire.alanHesapla();
+
+        Sekil kareSekli = new Kare("kare2",4);
+        kareSekli.alanHesapla();
+        // kare icinde tanimladigim cevre hesaplamayi goremez....
+        */
+
 
         /*
         // sadece yas kontrolu
