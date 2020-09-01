@@ -1,5 +1,6 @@
 package com.dersler;
 
+import com.dersler.generic.GenericClass;
 import com.dersler.innerClass.LocalInner;
 import com.dersler.innerClass.Matematik;
 import com.dersler.innerClass.Matematik.Factorial;
@@ -14,17 +15,22 @@ import com.dersler.soyutAbstract.Daire;
 import com.dersler.soyutAbstract.Kare;
 import com.dersler.soyutAbstract.Sekil;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
 
-
-          //Local inner class  burada ki local inner içeren metoda erişemeyiz.
-          LocalInner localInner = new LocalInner("deneme");
-          localInner.innerClassMethod();
-
+        /*
+        GenericClass<String> genericClass = new GenericClass<String>();
+        genericClass.yazdir(new String[]{"ali","veli","str"});
+         */
+        /*
+        //Local inner class  burada ki local inner içeren metoda erişemeyiz.
+        LocalInner localInner = new LocalInner("deneme");
+        localInner.innerClassMethod();
+         */
 
         /*  STATIK OLMAYAN INNER CLASS OBJESI
         Matematik.Factorial factorial = new Matematik().new Factorial();
