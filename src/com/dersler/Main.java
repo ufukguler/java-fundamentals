@@ -1,11 +1,19 @@
 package com.dersler;
 
+import com.dersler.interfacee.PcMuhendis;
 import com.dersler.oop.accessModifiers.Araba;
 import com.dersler.oop.inheritance.Yonetici;
 
-public class MainClass {
+public class Main {
 
     public static void main(String[] args) {
+        PcMuhendis muhendis = new PcMuhendis(false,false);
+        muhendis.askerlik();
+        muhendis.adli_sicil();
+        muhendis.meslek("pc muh.");
+        System.out.println(muhendis.universite_adi("pamukkale universitesi"));
+
+/*
         Araba arabam = new Araba();
         System.out.println(arabam.hashCode());
         arabam.renk = "sarı";
@@ -16,7 +24,7 @@ public class MainClass {
 
         Yonetici yonetici = new Yonetici("ufuk",10,"yazilim");
         System.out.println(yonetici.bilgileri());
-
+*/
      }
 
 }
