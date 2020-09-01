@@ -1,5 +1,5 @@
 package com.dersler.interfacee.ornek;
 
 public interface UserCheckService {
-    void checkUser(User user);
+    boolean checkUser(User user);
 }
