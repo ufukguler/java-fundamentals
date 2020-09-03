@@ -25,4 +25,4 @@ public class Test {
         E birinci = arr.entrySet().stream().max((eIntegerEntry, t1) -> eIntegerEntry.getValue() > t1.getValue() ? 1 : -1).get().getKey();
         return birinci;
     }
-}
+}  

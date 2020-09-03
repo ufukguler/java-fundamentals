@@ -63,8 +63,7 @@ public class Main {
         kareSekli.alanHesapla();
         // kare icinde tanimladigim cevre hesaplamayi goremez....
         */
-        /*
-        // sadece yas kontrolu
+         // sadece yas kontrolu
         SignUpManager signUpManager = new SignUpManager(new AgeUserCheck());
         signUpManager.signUp(new User(111,"Ufuk",17));
         signUpManager.signUp(new User(111,"Ufuk",18));
@@ -74,7 +73,7 @@ public class Main {
         signUpManager.signUp(new User(111,"Ufuk",17));
         signUpManager.signUp(new User(111,"İbo",18));
         signUpManager.signUp(new User(111,"Ufuk",18));
-        */
+
         /*
         IMuhendis muhendis1 = new IMuhendis();
         muhendis1.askerlik_durumu_sorgula();
