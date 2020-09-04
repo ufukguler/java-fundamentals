@@ -4,7 +4,7 @@ import java.util.Enumeration;
 import java.util.ListIterator;
 import java.util.Vector;
 
-public class Vektor {
+public class Vectors {
     public static void  main(String[] args) {
         Vector<String> stringVector = new Vector<>();
         stringVector.add("java");

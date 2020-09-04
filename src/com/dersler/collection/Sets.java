@@ -2,7 +2,7 @@ package com.dersler.collection;
 
 import java.util.*;
 
-public class Setler {
+public class Sets {
     public static void main(String[] args) {
 
         Set<String> set1 = new HashSet<>();

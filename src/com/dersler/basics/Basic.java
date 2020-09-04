@@ -1,8 +1,8 @@
-package com.dersler.temel;
+package com.dersler.basics;
 
 import java.util.Scanner;
 
-public class BaziTemeller {
+public class Basic {
     static boolean asal(int sayi) {
         for (int i = 2; i < sayi; i++) {
             if (sayi % i == 0) {

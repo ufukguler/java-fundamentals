@@ -3,7 +3,7 @@ package com.dersler.collection;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Mapler {
+public class Maps {
     public static void main(String[] args) {
         /*
         HashMap<Integer, String> hashMap = new HashMap<>();
